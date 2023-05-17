@@ -1,67 +1,84 @@
 <!DOCTYPE html>
 
 <html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+  <body>
+    <form method="post">
+      <label for="name">Name</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Name"
+      /><br />
 
-<body>
+      <label for="email">Email</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Email"
+      /><br />
 
-	<form method="post">
+      <p>Gender</p>
+      <input type="radio" id="gender_m" name="gender" required />
+      <label for="gender_m">Male</label>
+      <input type="radio" id="gender_f" name="gender" required />
+      <label for="gender_f">Female</label><br /><br />
 
-		<label for="name">Name</label><br>
-		<input type="text" id="name" name="name" required placeholder="Name"><br>
+      <label for="cars">Car Brands:-</label>
+      <select name="cars" id="cars">
+        <option value="" disabled selected>--Please choose an option--</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Mercedez">Mercedez</option>
+      </select>
+      <br /><br />
 
-		<label for="email">Email</label><br>
-		<input type="email" id="email" name="email" required placeholder="Email"><br>
+      <label for="age"> Age:</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        required
+        placeholder="Age"
+      /><br /><br />
 
-		<p>Gender</p>
-		<input type="radio" id="gender_m" name="gender" required>
-		<label for="gender_m">Male</label>
-		<input type="radio" id="gender_f" name="gender" required>
-		<label for="gender_f">Female</label><br><br>
+      <label for="dob">DOB:</label>
+      <input type="date" id="dob" name="dob" required /><br /><br />
 
-		<label for="cars" >Car Brands:-</label>
-		<select name="cars" id="cars">
-			<option value="" disabled selected>--Please choose an option--</option>
-			<option value="BMW">BMW</option>
-			<option value="Audi">Audi</option>
-			<option value="Mercedez">Mercedez</option>
-		</select>
-		<br><br>
+      <label for="tel">Phone Number:</label>
+      <input
+        type="number"
+        id="tel"
+        name="phoneNo"
+        placeholder="xxxx-xxxx-xxxx"
+      /><br /><br />
 
-		<label for="age"> Age:</label>
-		<input type="number" id="age" name="age" required placeholder="Age"><br><br>
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        placeholder="Password"
+      /><br /><br />
 
-		<label for="dob">DOB:</label>
-		<input type="date" id="dob" name="dob" required><br><br>
+      <input type="checkbox" id="tos" name="tos" required checked />
+      <label for="tos">Accept tos</label><br /><br />
 
-		<label for="tel">Phone Number:</label>
-		<input type="number" id="tel" name="phoneNo" placeholder="xxxx-xxxx-xxxx"><br><br>
+      <!-- 		<input type='submit' value="submit"> -->
+      <button type="submit">Submit</button>
+    </form>
+    <!-- //Failures: -->
+    <!-- 	1.Options mein required kaise lagayenge -->
 
-		<label for="password" >Password:</label>
-		<input type="password" id="password" name="password" required placeholder="Password"><br><br>
-
-		
-		<input type="checkbox" id="tos" name="tos" required checked>
-		<label for="tos">Accept tos</label><br><br>
-
-<!-- 		<input type='submit' value="submit"> -->
-		<button type="submit">Submit</button>
-
-		
-	</form>
-<!-- //Failures: -->
-<!-- 	1.Options mein required kaise lagayenge -->
-
-
-
-	
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
+    <!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
 </html>
